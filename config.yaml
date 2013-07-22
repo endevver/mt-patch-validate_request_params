@@ -1,0 +1,10 @@
+name:         Validate request params patch
+version:      1.0.0
+description:  'This plugin patches a bug in MT/App.pm that causes incorrect behaviour when the CONTENT_TYPE header contains more content after the charset declaration'
+id:           ValidateRequestParamsPatch
+author_name:  "Maarten Schenk, Endevver LLC"
+author_url:   http://endevver.com/
+
+callbacks:
+    post_init: $ValidateRequestParamsPatch::ValidateRequestParamsPatch::post_init
+
